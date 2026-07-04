@@ -10,10 +10,10 @@
 	"codeowners": ["@donandren", "@Itay01"],
 	"config_flow": true,
 	"dependencies": ["bluetooth"],
-	"documentation": "https://github.com/Itay01/ha-ilink-light",
+	"documentation": "https://github.com/Itay01/ilink_light",
 	"homeassistant": "2024.1.0",
 	"iot_class": "local_push",
-	"issue_tracker": "https://github.com/Itay01/ha-ilink-light/issues",
+	"issue_tracker": "https://github.com/Itay01/ilink_light/issues",
 	"requirements": [],
 	"version": "2.0.0"
 }
