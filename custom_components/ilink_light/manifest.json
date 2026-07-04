@@ -1,0 +1,19 @@
+{
+	"domain": "ilink_light",
+	"name": "iLink Light",
+	"bluetooth": [
+		{
+			"connectable": true,
+			"service_uuid": "0000a032-0000-1000-8000-00805f9b34fb"
+		}
+	],
+	"codeowners": ["@donandren", "@YOUR_GITHUB_USERNAME"],
+	"config_flow": true,
+	"dependencies": ["bluetooth"],
+	"documentation": "https://github.com/YOUR_GITHUB_USERNAME/ha-ilink-light",
+	"homeassistant": "2024.1.0",
+	"iot_class": "local_push",
+	"issue_tracker": "https://github.com/YOUR_GITHUB_USERNAME/ha-ilink-light/issues",
+	"requirements": [],
+	"version": "2.0.0"
+}
