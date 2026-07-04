@@ -24,7 +24,7 @@ for the full protocol writeup.
 ### HACS (recommended)
 
 1. HACS → Integrations → **⋮ → Custom repositories**
-2. Add `https://github.com/<YOUR_GITHUB_USERNAME>/ha-ilink-light`, category **Integration**
+2. Add `https://github.com/Itay01/ha-ilink-light`, category **Integration**
 3. Find **iLink Light**, install, restart Home Assistant
 
 ### Manual
@@ -64,7 +64,7 @@ including confidence level per command and how each was derived, is in
 ## Credits
 
 - Original integration: [donandren](https://github.com/donandren/ilink_light)
-- This fork's BLE-connection rewrite and protocol corrections: you 🙂 (fill in your name/handle here)
+- This fork's BLE-connection rewrite and protocol corrections: [Itay Marom](https://github.com/Itay01)
 
 ## License
 
