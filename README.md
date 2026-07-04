@@ -5,8 +5,7 @@ A Home Assistant custom component for BLE lamps controlled by the **iLink** app
 from a live BLE capture of the official app — see [`docs/ILINK_PROTOCOL.md`](docs/ILINK_PROTOCOL.md)
 for the full protocol writeup.
 
-> **This is a fork** of [muddxyii/ilink_light](https://github.com/muddxyii/ilink_light),
-> which is itself a fork of the original [donandren/ilink_light](https://github.com/donandren/ilink_light)
+> **This is a fork** of the original [donandren/ilink_light](https://github.com/donandren/ilink_light)
 > (MIT licensed). This fork rewrites the BLE layer for responsiveness and
 > corrects/extends the reverse-engineered protocol; see
 > [Changes from upstream](#changes-from-upstream) below.
@@ -66,7 +65,6 @@ including confidence level per command and how each was derived, is in
 ## Credits
 
 - Original integration: [donandren](https://github.com/donandren/ilink_light)
-- Immediate upstream (bug fixes for recent HA versions): [muddxyii](https://github.com/muddxyii/ilink_light)
 - This fork's BLE-connection rewrite and protocol corrections: [Itay Marom](https://github.com/Itay01)
 
 ## License
