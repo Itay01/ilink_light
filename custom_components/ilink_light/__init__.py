@@ -33,6 +33,13 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         coordinator = LightCoordinator(hass, device.id, conf)
         hass.data[DOMAIN][CONF_DEVICES][device_id] = coordinator
 
+        # Read the lamp's actual state right away instead of waiting for the first
+        # scheduled background poll (which could otherwise be several minutes away,
+        # showing hardcoded defaults in the meantime). This also raises
+        # ConfigEntryNotReady if the lamp can't be reached, so HA will retry setup
+        # automatically rather than silently starting up with wrong/default state.
+        await coordinator.async_config_entry_first_refresh()
+
     # Forward the setup to the platforms.
     hass.async_create_task(
         hass.config_entries.async_forward_entry_setups(entry, PLATFORMS)
